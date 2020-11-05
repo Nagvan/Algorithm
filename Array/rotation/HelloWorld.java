@@ -1,4 +1,4 @@
-package Array.rotation.com.tutorial;
+package Array.rotation;
 
 public class HelloWorld {
     public static void main(String[] args) {
