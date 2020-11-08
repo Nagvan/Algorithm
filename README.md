@@ -3,6 +3,7 @@ Data Structure and Algorithm. Solving some interesting problems.
 
 Array
     Array Left Rotation and Right Rotation.
+    
     Search in Rotated array.
   
 List
