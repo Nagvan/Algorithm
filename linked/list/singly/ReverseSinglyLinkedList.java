@@ -1,7 +1,7 @@
 package linked.list.singly;
 
-import linked.list.util.LinkedListUtil;
 import linked.list.entity.Node;
+import linked.list.util.LinkedListUtil;
 
 public class ReverseSinglyLinkedList {
     public static void main(String[] args) {

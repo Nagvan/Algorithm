@@ -22,8 +22,9 @@ public class ArrayRotation {
      * Function to rotate an array left by k
      * Total Time complexity O(n)
      * Total Space complexity O(1)
+     *
      * @param array array to be rotate
-     * @param k amount by which array will be rotated
+     * @param k     amount by which array will be rotated
      */
     private static void leftRotate(int[] array, int k) {
         /*reverse 1st k numbers only
@@ -47,8 +48,9 @@ public class ArrayRotation {
      * Function to rotate an array right by k
      * Total Time complexity O(n)
      * Total Space complexity O(1)
+     *
      * @param array array for rotation
-     * @param k amount by which array will be rotated
+     * @param k     amount by which array will be rotated
      */
     private static void rightRotate(int[] array, int k) {
         /*reverse last k numbers only
@@ -72,8 +74,9 @@ public class ArrayRotation {
      * Function to reverse an array, will work for any kind of array
      * Time complexity O(n/2)
      * Space complexity O(1)
+     *
      * @param array array to rotate
-     * @param left left index
+     * @param left  left index
      * @param right right index
      */
     private static void reverse(int[] array, int left, int right) {

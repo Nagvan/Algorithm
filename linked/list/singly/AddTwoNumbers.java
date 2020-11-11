@@ -38,12 +38,22 @@ public class AddTwoNumbers {
         LinkedListUtil.printLinkedList(addNumbers(null, null));
     }
 
+    /**
+     * Function to add two numbers represented as a linked list
+     * Time complexity O(3*(m+n))
+     * Space complexity O(1)
+     *
+     * @param number1 number one to be added
+     * @param number2 number two to be added
+     * @return list as a sum of two numbers
+     */
     private static Node addNumbers(Node number1, Node number2) {
         if (number1 == null) {
             return number2;
         } else if (number2 == null) {
             return number1;
         }
+        //reverse the lists
         number1 = LinkedListUtil.reverseSinglyLinkedList(number1);
         number2 = LinkedListUtil.reverseSinglyLinkedList(number2);
         Node result = null;
@@ -67,9 +77,11 @@ public class AddTwoNumbers {
                 number2 = number2.getNext();
             }
         }
+        //if carry is left, create a node with value as carry and append it to the end.
         if (carry > 0) {
             current.setNext(new Node(carry));
         }
+        //reverse the result and return
         return LinkedListUtil.reverseSinglyLinkedList(result);
     }
 }
