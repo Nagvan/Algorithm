@@ -34,13 +34,13 @@ public class SpiralLevelOrderTraversal {
 
     }
 
-    private static void spiralLevelOrderTraversal(Node A) {
-        if (A == null) {
+    private static void spiralLevelOrderTraversal(Node root) {
+        if (root == null) {
             return;
         }
         Stack<Node> stack1 = new Stack();
         Stack<Node> stack2 = new Stack();
-        stack1.push(A);
+        stack1.push(root);
         while (!stack1.isEmpty() || !stack2.isEmpty()) {
             while (!stack1.isEmpty()) {
                 Node current = stack1.pop();
